@@ -3,7 +3,7 @@
     <div class="form-check form-switch">
       <input class="form-check-input" v-model="isSort" @change="sortedPosts" type="checkbox"
              id="flexSwitchCheckDefault">
-      <label class="form-check-label" for="flexSwitchCheckDefault">Z-A</label>
+      <label class="form-check-label" for="flexSwitchCheckDefault">A-Z</label>
     </div>
 
     <post-component v-for="post in posts" :post="post"/>
@@ -23,13 +23,10 @@ export default {
   props: {
     posts: Array,
   },
-  methods: {
-
-  },
   components: {
     postComponent,
   },
-  computed: {
+  methods: {
     sortedPosts() {
       this.isSort = !this.isSort;
       if (this.isSort === true) {
@@ -40,12 +37,15 @@ export default {
 
       switch (this.isSort) {
         case true:
-          return this.posts.sort((a, b) => b.title.localeCompare(a.title));
-        default:
           return this.posts.sort((a, b) => a.title.localeCompare(b.title));
+        default:
+          return this.posts.sort((a, b) => b.title.localeCompare(a.title));
       }
     },
   },
+  updated() {
+    this.sortedPosts()
+  }
 }
 </script>
 

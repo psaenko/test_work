@@ -1,5 +1,9 @@
 <template>
   <section>
+    <div class="my-2">
+      <back-button />
+    </div>
+
     <div id="map" class="vw-100" style="height: 90vh">
     </div>
 
@@ -11,13 +15,15 @@
 import "leaflet/dist/leaflet.css";
 import leaflet from 'leaflet'
 import createMarketModal from '@/components/modals/create.marker.modal.vue'
+import backButton from "../components/buttons/back.button.vue";
 import {mapMutations, mapGetters} from "vuex";
 
 export default {
   name: 'Home',
   components: {
     leaflet,
-    createMarketModal
+    createMarketModal,
+    backButton
   },
   data() {
     return {
