@@ -38,7 +38,7 @@ Install dependencies **server**
 
 ## API Reference
 
-#### Send mail
+#### Get data
 
 ```http
   https://jsonplaceholder.typicode.com/
