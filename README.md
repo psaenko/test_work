@@ -48,7 +48,7 @@ Install dependencies **server**
 | :-------- | :------- | :------------------------- |
 | `/posts` | `GET` | Всі пости |
 | `/posts/1` | `GET` | Один пост за ID |
-| `/comments?postId=1` | `GET` | Коментарі до посту зі ID |
+| `/comments?postId=1` | `GET` | Коментарі до посту за ID |
 
 
 
