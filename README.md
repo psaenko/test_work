@@ -26,7 +26,7 @@ Go to the project directory
   cd test_work
 ```
 
-Install dependencies **server**
+Install dependencies
 
 ```bash
   npm install
