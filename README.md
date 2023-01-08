@@ -38,10 +38,10 @@ Install dependencies **server**
 
 ## API Reference
 
-#### Get data
+#### Base url
 
 ```http
-  https://jsonplaceholder.typicode.com/
+  https://jsonplaceholder.typicode.com
 ```
 
 | Route | Type     | Description                |
