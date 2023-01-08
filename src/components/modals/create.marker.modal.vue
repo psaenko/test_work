@@ -14,6 +14,7 @@ export default {
             `<input id="latitude" placeholder="Широта" value="${lat}" type="text" class="swal2-input">` +
             `<input id="longitude" placeholder="Довгота" value="${lng}" type="text" class="swal2-input">`,
         focusConfirm: false,
+        confirmButtonText: 'Додати',
         preConfirm: () => {
           return [
             document.getElementById('name').value,
